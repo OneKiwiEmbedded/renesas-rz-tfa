@@ -79,8 +79,18 @@ void bl2_setup(u_register_t arg0, u_register_t arg1, u_register_t arg2,
  ******************************************************************************/
 void bl2_main(void)
 {
+		const char onekiwi_logo[] =
+"  ____           __ _ _        _  \n"
+" / __ \\___  ___ / //_(_)    __(_)\n"
+"/ /_/ / _ \\/ -_) ,< / / |/|/ / / \n"
+"\\____/_//_/\\__/_/|_/_/|__,__/_/ \n"
+"                                  \n"
+" 2025 OneKiwi Technology Co., Ltd \n";
+
 	entry_point_info_t *next_bl_ep_info;
 
+	puts(onekiwi_logo);
+	
 	NOTICE("BL2: %s\n", version_string);
 	NOTICE("BL2: %s\n", build_message);
 
