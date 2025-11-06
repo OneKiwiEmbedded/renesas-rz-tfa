@@ -79,6 +79,7 @@ void bl2_setup(u_register_t arg0, u_register_t arg1, u_register_t arg2,
 void bl2_main(void)
 {
 	const char onekiwi_logo[] =
+"                                  \n"
 "  ____           __ _ _        _  \n"
 " / __ \\___  ___ / //_(_)    __(_)\n"
 "/ /_/ / _ \\/ -_) ,< / / |/|/ / / \n"
