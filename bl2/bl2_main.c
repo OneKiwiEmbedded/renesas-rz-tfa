@@ -86,11 +86,12 @@ void bl2_main(void)
 "/ /_/ / _ \\/ -_) ,< / / |/|/ / / \n"
 "\\____/_//_/\\__/_/|_/_/|__,__/_/ \n"
 "                                  \n"
-" 2025 OneKiwi Technology Co., Ltd \n";
+" 2025 OneKiwi Technology Co., Ltd \n"
+"                                  \n";
 
 	entry_point_info_t *next_bl_ep_info;
 
-	puts(onekiwi_logo);
+	printf("%s", onekiwi_logo);
 
 	NOTICE("BL2: %s\n", version_string);
 	NOTICE("BL2: %s\n", build_message);
